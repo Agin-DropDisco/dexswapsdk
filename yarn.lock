@@ -3155,7 +3155,7 @@ detect-newline@^2.1.0:
 
 "dexswap-router@git://github.com/Agin-DropDisco/dexswaprouter.git":
   version "0.1.1"
-  resolved "git://github.com/Agin-DropDisco/dexswaprouter.git#cf65a6d0bbf251b7b7b50d2d0f8088fa8f33792d"
+  resolved "git://github.com/Agin-DropDisco/dexswaprouter.git#6d2ddab30cc5c65e878e667ac7ccd0b8b00c33a1"
   dependencies:
     "@truffle/hdwallet-provider" "^1.4.0"
 
