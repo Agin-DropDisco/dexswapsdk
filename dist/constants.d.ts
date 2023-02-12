@@ -6,7 +6,8 @@ import TOKEN_REGISTRY_ABI from './abis/token-registry.json';
 export declare type BigintIsh = JSBI | bigint | string;
 export declare enum ChainId {
     MAINNET = 1,
-    MANTLE_TESTNET = 5001
+    MANTLE_TESTNET = 5001,
+    MUMBAI = 80001
 }
 export declare enum TradeType {
     EXACT_INPUT = 0,

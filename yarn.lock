@@ -3143,9 +3143,9 @@ detect-newline@^2.1.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
-"dexswap-core@git://github.com/Agin-DropDisco/dexswapcore.git":
+"dexswap-core@git://github.com/Agin-DropDisco/dexswapcore.git#v3":
   version "0.1.1"
-  resolved "git://github.com/Agin-DropDisco/dexswapcore.git#475efcd9ca527c7b018cc3e3b8e1bcd0c84c3ebc"
+  resolved "git://github.com/Agin-DropDisco/dexswapcore.git#c4663b5089e6172e528890f8c18a5bb5048f0b8c"
   dependencies:
     "@harmony-js/core" "^0.1.57"
     "@truffle/hdwallet-provider" "^1.4.0"
@@ -3153,9 +3153,9 @@ detect-newline@^2.1.0:
     typescript "^3.9.5"
     zeppelin-solidity "^1.12.0"
 
-"dexswap-router@git://github.com/Agin-DropDisco/dexswaprouter.git#v2":
+"dexswap-router@git://github.com/Agin-DropDisco/dexswaprouter.git#v3":
   version "0.1.1"
-  resolved "git://github.com/Agin-DropDisco/dexswaprouter.git#e9d9cfb166cf5d03a0b049b5b9bb34d43bc52863"
+  resolved "git://github.com/Agin-DropDisco/dexswaprouter.git#abd3d859411b068581c2688385f8e73a5f1cbbe0"
   dependencies:
     "@truffle/hdwallet-provider" "^1.4.0"
 

@@ -25,6 +25,7 @@ import { LiquidityMiningCampaign } from './liquidity-mining-campaign'
 const INITIAL_CACHE_STATE = {
   [ChainId.MAINNET]: {},
   [ChainId.MANTLE_TESTNET]: {},
+  [ChainId.MUMBAI]: {},
 }
 
 let PAIR_ADDRESS_CACHE: {
