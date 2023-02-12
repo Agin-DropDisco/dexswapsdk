@@ -6,10 +6,12 @@ import TOKEN_REGISTRY_ABI from './abis/token-registry.json'
 import {
   mainnet as coreMainnet,
   mantle_testnet as coreMantle_Testnet,
+  mumbai as coreMumbai,
 } from 'dexswap-core/.contracts.json'
 import {
   mainnet as peripheryMainnet,
   mantle_testnet as peripheryMantle_Testnet,
+  mumbai as peripheryMumbai,
 } from 'dexswap-router/.contracts.json'
 
 // exports for external consumption
@@ -18,6 +20,7 @@ export type BigintIsh = JSBI | bigint | string
 export enum ChainId {
   MAINNET = 1,
   MANTLE_TESTNET = 5001,
+  MUMBAI = 80001,
 }
 
 export enum TradeType {
@@ -36,26 +39,31 @@ export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 export const FACTORY_ADDRESS: { [chainId: number]: string } = {
   [ChainId.MAINNET]: coreMainnet.factory,
   [ChainId.MANTLE_TESTNET]: coreMantle_Testnet.factory,
+  [ChainId.MUMBAI]: coreMumbai.factory,
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: peripheryMainnet.router,
   [ChainId.MANTLE_TESTNET]: peripheryMantle_Testnet.router,
+  [ChainId.MUMBAI]: peripheryMumbai.router,
 }
 
 export const STAKING_REWARDS_FACTORY_ADDRESS: { [chainId: number]: string } = {
   [ChainId.MAINNET]: '0x0000000000000000000000000000000000001234',
   [ChainId.MANTLE_TESTNET]: '0x0000000000000000000000000000000000001234',
+  [ChainId.MUMBAI]: '0x0000000000000000000000000000000000001234',
 }
 
 export const TOKEN_REGISTRY_ADDRESS: { [chainId: number]: string } = {
   [ChainId.MAINNET]: '0x93DB90445B76329e9ed96ECd74e76D8fbf2590d8',
   [ChainId.MANTLE_TESTNET]: '0x3e7C79EF335F55b2E57C80731a68cAB9dB280453',
+  [ChainId.MUMBAI]: '0x63Aa6D1462165bDfb1b50415f5fe70Ded49E5d35',
 }
 
 export const DEXSWAP_TOKEN_LIST_ID: { [chainId: number]: number } = {
   [ChainId.MAINNET]: 1,
   [ChainId.MANTLE_TESTNET]: 1,
+  [ChainId.MUMBAI]: 1,
 
 }
 
@@ -93,6 +101,7 @@ export const SOLIDITY_TYPE_MAXIMA = {
 const PERMISSIVE_MULTICALL_ADDRESS: { [chainId: number]: string } = {
   [ChainId.MAINNET]: '0x0946f567d0ed891e6566c1da8e5093517f43571d',
   [ChainId.MANTLE_TESTNET]: '0xA8fD29EbbfbC21bc274FedE5Aa5C5D3cedc43f2C',
+  [ChainId.MUMBAI]: '0xBE134FCAB1141485a7cD9Cc952172E0AcA9Ed46D',
 }
 
 export {

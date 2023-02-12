@@ -1397,6 +1397,7 @@ var _FACTORY_ADDRESS, _ROUTER_ADDRESS, _STAKING_REWARDS_FACT, _TOKEN_REGISTRY_AD
 (function (ChainId) {
   ChainId[ChainId["MAINNET"] = 1] = "MAINNET";
   ChainId[ChainId["MANTLE_TESTNET"] = 5001] = "MANTLE_TESTNET";
+  ChainId[ChainId["MUMBAI"] = 80001] = "MUMBAI";
 })(exports.ChainId || (exports.ChainId = {}));
 
 (function (TradeType) {
@@ -1411,11 +1412,11 @@ var _FACTORY_ADDRESS, _ROUTER_ADDRESS, _STAKING_REWARDS_FACT, _TOKEN_REGISTRY_AD
 })(exports.Rounding || (exports.Rounding = {}));
 
 var ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
-var FACTORY_ADDRESS = (_FACTORY_ADDRESS = {}, _FACTORY_ADDRESS[exports.ChainId.MAINNET] = _contracts_json.mainnet.factory, _FACTORY_ADDRESS[exports.ChainId.MANTLE_TESTNET] = _contracts_json.mantle_testnet.factory, _FACTORY_ADDRESS);
-var ROUTER_ADDRESS = (_ROUTER_ADDRESS = {}, _ROUTER_ADDRESS[exports.ChainId.MAINNET] = _contracts_json$1.mainnet.router, _ROUTER_ADDRESS[exports.ChainId.MANTLE_TESTNET] = _contracts_json$1.mantle_testnet.router, _ROUTER_ADDRESS);
-var STAKING_REWARDS_FACTORY_ADDRESS = (_STAKING_REWARDS_FACT = {}, _STAKING_REWARDS_FACT[exports.ChainId.MAINNET] = '0x0000000000000000000000000000000000001234', _STAKING_REWARDS_FACT[exports.ChainId.MANTLE_TESTNET] = '0x0000000000000000000000000000000000001234', _STAKING_REWARDS_FACT);
-var TOKEN_REGISTRY_ADDRESS = (_TOKEN_REGISTRY_ADDRE = {}, _TOKEN_REGISTRY_ADDRE[exports.ChainId.MAINNET] = '0x93DB90445B76329e9ed96ECd74e76D8fbf2590d8', _TOKEN_REGISTRY_ADDRE[exports.ChainId.MANTLE_TESTNET] = '0x3e7C79EF335F55b2E57C80731a68cAB9dB280453', _TOKEN_REGISTRY_ADDRE);
-var DEXSWAP_TOKEN_LIST_ID = (_DEXSWAP_TOKEN_LIST_I = {}, _DEXSWAP_TOKEN_LIST_I[exports.ChainId.MAINNET] = 1, _DEXSWAP_TOKEN_LIST_I[exports.ChainId.MANTLE_TESTNET] = 1, _DEXSWAP_TOKEN_LIST_I);
+var FACTORY_ADDRESS = (_FACTORY_ADDRESS = {}, _FACTORY_ADDRESS[exports.ChainId.MAINNET] = _contracts_json.mainnet.factory, _FACTORY_ADDRESS[exports.ChainId.MANTLE_TESTNET] = _contracts_json.mantle_testnet.factory, _FACTORY_ADDRESS[exports.ChainId.MUMBAI] = _contracts_json.mumbai.factory, _FACTORY_ADDRESS);
+var ROUTER_ADDRESS = (_ROUTER_ADDRESS = {}, _ROUTER_ADDRESS[exports.ChainId.MAINNET] = _contracts_json$1.mainnet.router, _ROUTER_ADDRESS[exports.ChainId.MANTLE_TESTNET] = _contracts_json$1.mantle_testnet.router, _ROUTER_ADDRESS[exports.ChainId.MUMBAI] = _contracts_json$1.mumbai.router, _ROUTER_ADDRESS);
+var STAKING_REWARDS_FACTORY_ADDRESS = (_STAKING_REWARDS_FACT = {}, _STAKING_REWARDS_FACT[exports.ChainId.MAINNET] = '0x0000000000000000000000000000000000001234', _STAKING_REWARDS_FACT[exports.ChainId.MANTLE_TESTNET] = '0x0000000000000000000000000000000000001234', _STAKING_REWARDS_FACT[exports.ChainId.MUMBAI] = '0x0000000000000000000000000000000000001234', _STAKING_REWARDS_FACT);
+var TOKEN_REGISTRY_ADDRESS = (_TOKEN_REGISTRY_ADDRE = {}, _TOKEN_REGISTRY_ADDRE[exports.ChainId.MAINNET] = '0x93DB90445B76329e9ed96ECd74e76D8fbf2590d8', _TOKEN_REGISTRY_ADDRE[exports.ChainId.MANTLE_TESTNET] = '0x3e7C79EF335F55b2E57C80731a68cAB9dB280453', _TOKEN_REGISTRY_ADDRE[exports.ChainId.MUMBAI] = '0x63Aa6D1462165bDfb1b50415f5fe70Ded49E5d35', _TOKEN_REGISTRY_ADDRE);
+var DEXSWAP_TOKEN_LIST_ID = (_DEXSWAP_TOKEN_LIST_I = {}, _DEXSWAP_TOKEN_LIST_I[exports.ChainId.MAINNET] = 1, _DEXSWAP_TOKEN_LIST_I[exports.ChainId.MANTLE_TESTNET] = 1, _DEXSWAP_TOKEN_LIST_I[exports.ChainId.MUMBAI] = 1, _DEXSWAP_TOKEN_LIST_I);
 var INIT_CODE_HASH = '0xf05144df01c2dff34b8969e598a19108ca21af70e4b6866975a88d73a45760ea';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
@@ -1440,7 +1441,7 @@ var defaultProtocolFeeDenominator = FIVE;
 })(exports.SolidityType || (exports.SolidityType = {}));
 
 var SOLIDITY_TYPE_MAXIMA = (_SOLIDITY_TYPE_MAXIMA = {}, _SOLIDITY_TYPE_MAXIMA[exports.SolidityType.uint8] = /*#__PURE__*/JSBI.BigInt('0xff'), _SOLIDITY_TYPE_MAXIMA[exports.SolidityType.uint256] = /*#__PURE__*/JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'), _SOLIDITY_TYPE_MAXIMA);
-var PERMISSIVE_MULTICALL_ADDRESS = (_PERMISSIVE_MULTICALL = {}, _PERMISSIVE_MULTICALL[exports.ChainId.MAINNET] = '0x0946f567d0ed891e6566c1da8e5093517f43571d', _PERMISSIVE_MULTICALL[exports.ChainId.MANTLE_TESTNET] = '0xA8fD29EbbfbC21bc274FedE5Aa5C5D3cedc43f2C', _PERMISSIVE_MULTICALL);
+var PERMISSIVE_MULTICALL_ADDRESS = (_PERMISSIVE_MULTICALL = {}, _PERMISSIVE_MULTICALL[exports.ChainId.MAINNET] = '0x0946f567d0ed891e6566c1da8e5093517f43571d', _PERMISSIVE_MULTICALL[exports.ChainId.MANTLE_TESTNET] = '0xA8fD29EbbfbC21bc274FedE5Aa5C5D3cedc43f2C', _PERMISSIVE_MULTICALL[exports.ChainId.MUMBAI] = '0xBE134FCAB1141485a7cD9Cc952172E0AcA9Ed46D', _PERMISSIVE_MULTICALL);
 
 function validateSolidityTypeInstance(value, solidityType) {
   !JSBI.greaterThanOrEqual(value, ZERO) ?  invariant(false, value + " is not a " + solidityType + ".")  : void 0;
@@ -1768,7 +1769,7 @@ Currency.USD = /*#__PURE__*/new Currency(18, 'USD', 'US dollar'); // Native curr
 
 Currency.ETHER = /*#__PURE__*/new Currency(18, 'ETH', 'Ether');
 Currency.BIT = /*#__PURE__*/new Currency(18, 'BIT', 'BIT');
-Currency.NATIVE_CURRENCY = (_Currency$NATIVE_CURR = {}, _Currency$NATIVE_CURR[exports.ChainId.MAINNET] = Currency.ETHER, _Currency$NATIVE_CURR[exports.ChainId.MANTLE_TESTNET] = Currency.BIT, _Currency$NATIVE_CURR);
+Currency.NATIVE_CURRENCY = (_Currency$NATIVE_CURR = {}, _Currency$NATIVE_CURR[exports.ChainId.MAINNET] = Currency.ETHER, _Currency$NATIVE_CURR[exports.ChainId.MANTLE_TESTNET] = Currency.BIT, _Currency$NATIVE_CURR[exports.ChainId.MUMBAI] = Currency.ETHER, _Currency$NATIVE_CURR);
 var USD = Currency.USD;
 var ETHER = Currency.ETHER;
 var BIT = Currency.BIT;
@@ -1829,13 +1830,13 @@ var Token = /*#__PURE__*/function (_Currency) {
 
   return Token;
 }(Currency);
-Token.WETH = (_Token$WETH = {}, _Token$WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x41810F1664ce580072D9c23286Ea5df68db766F1', 18, 'WETH', 'Wrapped Ether'), _Token$WETH);
-Token.DEZU = (_Token$DEZU = {}, _Token$DEZU[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0xAc12F7948eFdfA205Df7daD3D1Ee04E564009ECB', 18, 'DEZU', 'DexSwapZonu'), _Token$DEZU);
-Token.WBTC = (_Token$WBTC = {}, _Token$WBTC[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x777638AB212Fab2F1D1202DedCC7f18D2c527b50', 8, 'WBTC', 'Wrapped BTC'), _Token$WBTC);
-Token.USDC = (_Token$USDC = {}, _Token$USDC[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x97830fa9e74C5a596C8994C37f9e92cBc42560B3', 8, 'USDC', 'USDC'), _Token$USDC);
-Token.USDT = (_Token$USDT = {}, _Token$USDT[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0xc75aE86d9F9d8C150b4bFf9A8Fb77481B0611a56', 8, 'USDT', 'USDT'), _Token$USDT);
-Token.WBNB = (_Token$WBNB = {}, _Token$WBNB[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0xD711d6Ee5cD88d8E33536a4b2918605B084F1A03', 8, 'WBNB', 'WBNB'), _Token$WBNB);
-Token.NATIVE_CURRENCY_WRAPPER = (_Token$NATIVE_CURRENC = {}, _Token$NATIVE_CURRENC[exports.ChainId.MAINNET] = Token.WETH[exports.ChainId.MAINNET], _Token$NATIVE_CURRENC[exports.ChainId.MANTLE_TESTNET] = Token.WETH[exports.ChainId.MANTLE_TESTNET], _Token$NATIVE_CURRENC);
+Token.WETH = (_Token$WETH = {}, _Token$WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x41810F1664ce580072D9c23286Ea5df68db766F1', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x2c57C73542a23dA327699D288757CFb41f71855f', 18, 'WETH', 'Wrapped Ether'), _Token$WETH);
+Token.DEZU = (_Token$DEZU = {}, _Token$DEZU[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0xAc12F7948eFdfA205Df7daD3D1Ee04E564009ECB', 18, 'DEZU', 'DexSwapZonu'), _Token$DEZU[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x7FB56986974896ed4203857bAFf15Cb89cf082Cd', 18, 'DEZU', 'DexSwapZonu'), _Token$DEZU);
+Token.WBTC = (_Token$WBTC = {}, _Token$WBTC[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x777638AB212Fab2F1D1202DedCC7f18D2c527b50', 8, 'WBTC', 'Wrapped BTC'), _Token$WBTC[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0xE77B1Dc85edE199bf3dAA85D0958F2F966788af5', 8, 'WBTC', 'Wrapped BTC'), _Token$WBTC);
+Token.USDC = (_Token$USDC = {}, _Token$USDC[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x97830fa9e74C5a596C8994C37f9e92cBc42560B3', 8, 'USDC', 'USDC'), _Token$USDC[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x530BEb0F943c4f23c95473F59Fe5fa9aF3eAA5A7', 8, 'USDC', 'USDC'), _Token$USDC);
+Token.USDT = (_Token$USDT = {}, _Token$USDT[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0xc75aE86d9F9d8C150b4bFf9A8Fb77481B0611a56', 8, 'USDT', 'USDT'), _Token$USDT[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x181e4AB46e2b6A6a262B1bA261ffd324BBA7C9f5', 8, 'USDT', 'USDT'), _Token$USDT);
+Token.WBNB = (_Token$WBNB = {}, _Token$WBNB[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0xD711d6Ee5cD88d8E33536a4b2918605B084F1A03', 8, 'WBNB', 'WBNB'), _Token$WBNB[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0xEB82D57081e600dc4f3a0877D04f4099ed641757', 8, 'WBNB', 'WBNB'), _Token$WBNB);
+Token.NATIVE_CURRENCY_WRAPPER = (_Token$NATIVE_CURRENC = {}, _Token$NATIVE_CURRENC[exports.ChainId.MAINNET] = Token.WETH[exports.ChainId.MAINNET], _Token$NATIVE_CURRENC[exports.ChainId.MANTLE_TESTNET] = Token.WETH[exports.ChainId.MANTLE_TESTNET], _Token$NATIVE_CURRENC[exports.ChainId.MUMBAI] = Token.WETH[exports.ChainId.MUMBAI], _Token$NATIVE_CURRENC);
 /**
  * Compares two currencies for equality
  */
@@ -2214,7 +2215,7 @@ RoutablePlatform.DEXSWAP = /*#__PURE__*/new RoutablePlatform('DexSwap', FACTORY_
 RoutablePlatform.UNISWAP = /*#__PURE__*/new RoutablePlatform('Uniswap', (_RoutablePlatform = {}, _RoutablePlatform[exports.ChainId.MAINNET] = UNISWAP_FACTORY_ADDRESS, _RoutablePlatform), (_RoutablePlatform2 = {}, _RoutablePlatform2[exports.ChainId.MAINNET] = UNISWAP_ROUTER_ADDRESS, _RoutablePlatform2), '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f', _30);
 
 var _INITIAL_CACHE_STATE, _PAIR_ADDRESS_CACHE;
-var INITIAL_CACHE_STATE = (_INITIAL_CACHE_STATE = {}, _INITIAL_CACHE_STATE[exports.ChainId.MAINNET] = {}, _INITIAL_CACHE_STATE[exports.ChainId.MANTLE_TESTNET] = {}, _INITIAL_CACHE_STATE);
+var INITIAL_CACHE_STATE = (_INITIAL_CACHE_STATE = {}, _INITIAL_CACHE_STATE[exports.ChainId.MAINNET] = {}, _INITIAL_CACHE_STATE[exports.ChainId.MANTLE_TESTNET] = {}, _INITIAL_CACHE_STATE[exports.ChainId.MUMBAI] = {}, _INITIAL_CACHE_STATE);
 var PAIR_ADDRESS_CACHE = (_PAIR_ADDRESS_CACHE = {}, _PAIR_ADDRESS_CACHE[RoutablePlatform.DEXSWAP.name] = /*#__PURE__*/_extends({}, INITIAL_CACHE_STATE), _PAIR_ADDRESS_CACHE);
 var Pair = /*#__PURE__*/function () {
   function Pair(tokenAmountA, tokenAmountB, swapFee, protocolFeeDenominator, platform, liquidityMiningCampaigns) {
@@ -2891,7 +2892,7 @@ var PricedTokenAmount = /*#__PURE__*/function (_CurrencyAmount) {
 
 var _MINIMUM_STAKED_AMOUN;
 
-var MINIMUM_STAKED_AMOUNT_NATIVE_CURRENCY = (_MINIMUM_STAKED_AMOUN = {}, _MINIMUM_STAKED_AMOUN[exports.ChainId.MAINNET] = /*#__PURE__*/CurrencyAmount.nativeCurrency( /*#__PURE__*/ethers.utils.parseUnits('0.1', Token.getNative(exports.ChainId.MAINNET).decimals).toString(), exports.ChainId.MAINNET), _MINIMUM_STAKED_AMOUN[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/CurrencyAmount.nativeCurrency( /*#__PURE__*/ethers.utils.parseUnits('1000', Token.getNative(exports.ChainId.MANTLE_TESTNET).decimals).toString(), exports.ChainId.MANTLE_TESTNET), _MINIMUM_STAKED_AMOUN);
+var MINIMUM_STAKED_AMOUNT_NATIVE_CURRENCY = (_MINIMUM_STAKED_AMOUN = {}, _MINIMUM_STAKED_AMOUN[exports.ChainId.MAINNET] = /*#__PURE__*/CurrencyAmount.nativeCurrency( /*#__PURE__*/ethers.utils.parseUnits('0.1', Token.getNative(exports.ChainId.MAINNET).decimals).toString(), exports.ChainId.MAINNET), _MINIMUM_STAKED_AMOUN[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/CurrencyAmount.nativeCurrency( /*#__PURE__*/ethers.utils.parseUnits('1000', Token.getNative(exports.ChainId.MANTLE_TESTNET).decimals).toString(), exports.ChainId.MANTLE_TESTNET), _MINIMUM_STAKED_AMOUN[exports.ChainId.MUMBAI] = /*#__PURE__*/CurrencyAmount.nativeCurrency( /*#__PURE__*/ethers.utils.parseUnits('1000', Token.getNative(exports.ChainId.MUMBAI).decimals).toString(), exports.ChainId.MUMBAI), _MINIMUM_STAKED_AMOUN);
 var LiquidityMiningCampaign = /*#__PURE__*/function () {
   function LiquidityMiningCampaign(startsAt, endsAt, targetedPair, rewards, staked, locked, stakingCap, address) {
     !JSBI.lessThan(parseBigintIsh(startsAt), parseBigintIsh(endsAt)) ?  invariant(false, 'INCONSISTENT_DATES')  : void 0;
@@ -3310,7 +3311,7 @@ var TOKEN_DATA_CACHE = (_TOKEN_DATA_CACHE = {}, _TOKEN_DATA_CACHE[exports.ChainI
   } // DGD
 
 }, _TOKEN_DATA_CACHE);
-var TOKEN_LOGO_URI_CACHE = (_TOKEN_LOGO_URI_CACHE = {}, _TOKEN_LOGO_URI_CACHE[exports.ChainId.MAINNET] = {}, _TOKEN_LOGO_URI_CACHE[exports.ChainId.MANTLE_TESTNET] = {}, _TOKEN_LOGO_URI_CACHE);
+var TOKEN_LOGO_URI_CACHE = (_TOKEN_LOGO_URI_CACHE = {}, _TOKEN_LOGO_URI_CACHE[exports.ChainId.MAINNET] = {}, _TOKEN_LOGO_URI_CACHE[exports.ChainId.MANTLE_TESTNET] = {}, _TOKEN_LOGO_URI_CACHE[exports.ChainId.MUMBAI] = {}, _TOKEN_LOGO_URI_CACHE);
 /**
  * Contains methods for constructing instances of pairs and tokens from on-chain data.
  */
@@ -3697,7 +3698,7 @@ var Fetcher = /*#__PURE__*/function () {
 
       var _chainId = token.chainId;
 
-      if (_chainId !== exports.ChainId.MAINNET && _chainId !== exports.ChainId.MANTLE_TESTNET) {
+      if (_chainId !== exports.ChainId.MAINNET && _chainId !== exports.ChainId.MANTLE_TESTNET && _chainId !== exports.ChainId.MUMBAI) {
         return Promise.resolve(''); // token logos not fully supported for testnets
       }
 
@@ -3715,7 +3716,7 @@ var Fetcher = /*#__PURE__*/function () {
 
   Fetcher.populateTokenLogoCache = function populateTokenLogoCache(chainId) {
     try {
-      if (chainId !== exports.ChainId.MAINNET && chainId !== exports.ChainId.MANTLE_TESTNET) {
+      if (chainId !== exports.ChainId.MAINNET && chainId !== exports.ChainId.MANTLE_TESTNET && chainId !== exports.ChainId.MUMBAI) {
         return Promise.resolve();
       }
 
@@ -3749,7 +3750,7 @@ var Fetcher = /*#__PURE__*/function () {
   Fetcher.getCachedTokenLogo = function getCachedTokenLogo(token) {
     var chainId = token.chainId;
 
-    if (chainId !== exports.ChainId.MAINNET && chainId !== exports.ChainId.MANTLE_TESTNET) {
+    if (chainId !== exports.ChainId.MAINNET && chainId !== exports.ChainId.MANTLE_TESTNET && chainId !== exports.ChainId.MUMBAI) {
       return '';
     }
 

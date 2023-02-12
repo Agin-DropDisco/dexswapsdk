@@ -18,6 +18,10 @@ const MINIMUM_STAKED_AMOUNT_NATIVE_CURRENCY: { [chainId in ChainId]: CurrencyAmo
     utils.parseUnits('1000', Token.getNative(ChainId.MANTLE_TESTNET).decimals).toString(),
     ChainId.MANTLE_TESTNET
   ),
+  [ChainId.MUMBAI]: CurrencyAmount.nativeCurrency(
+    utils.parseUnits('1000', Token.getNative(ChainId.MUMBAI).decimals).toString(),
+    ChainId.MUMBAI
+  ),
 }
 
 export class LiquidityMiningCampaign {
