@@ -3153,9 +3153,9 @@ detect-newline@^2.1.0:
     typescript "^3.9.5"
     zeppelin-solidity "^1.12.0"
 
-"dexswap-router@git://github.com/Agin-DropDisco/dexswaprouter.git":
+"dexswap-router@git://github.com/Agin-DropDisco/dexswaprouter.git#v2":
   version "0.1.1"
-  resolved "git://github.com/Agin-DropDisco/dexswaprouter.git#6d2ddab30cc5c65e878e667ac7ccd0b8b00c33a1"
+  resolved "git://github.com/Agin-DropDisco/dexswaprouter.git#e9d9cfb166cf5d03a0b049b5b9bb34d43bc52863"
   dependencies:
     "@truffle/hdwallet-provider" "^1.4.0"
 
