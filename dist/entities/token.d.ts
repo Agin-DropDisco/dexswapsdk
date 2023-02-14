@@ -12,6 +12,12 @@ export declare class Token extends Currency {
     static readonly DEZU: {
         [key: number]: Token;
     };
+    static readonly ZONU: {
+        [key: number]: Token;
+    };
+    static readonly ZGEM: {
+        [key: number]: Token;
+    };
     static readonly WBTC: {
         [key: number]: Token;
     };
@@ -61,5 +67,11 @@ export declare const USDT: {
     [key: number]: Token;
 };
 export declare const DEZU: {
+    [key: number]: Token;
+};
+export declare const ZONU: {
+    [key: number]: Token;
+};
+export declare const ZGEM: {
     [key: number]: Token;
 };
