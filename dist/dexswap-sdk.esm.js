@@ -1775,7 +1775,7 @@ var USD = Currency.USD;
 var ETHER = Currency.ETHER;
 var BIT = Currency.BIT;
 
-var _Token$WETH, _Token$DEZU, _Token$WBTC, _Token$USDC, _Token$USDT, _Token$WBNB, _Token$NATIVE_CURRENC;
+var _Token$WETH, _Token$DEZU, _Token$ZONU, _Token$ZGEM, _Token$WBTC, _Token$USDC, _Token$USDT, _Token$WBNB, _Token$NATIVE_CURRENC;
 /**
  * Represents an ERC20 token with a unique address and some metadata.
  */
@@ -1831,8 +1831,10 @@ var Token = /*#__PURE__*/function (_Currency) {
 
   return Token;
 }(Currency);
-Token.WETH = (_Token$WETH = {}, _Token$WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(ChainId.MANTLE_TESTNET, '0x41810F1664ce580072D9c23286Ea5df68db766F1', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[ChainId.MUMBAI] = /*#__PURE__*/new Token(ChainId.MUMBAI, '0x2c57C73542a23dA327699D288757CFb41f71855f', 18, 'WETH', 'Wrapped Ether'), _Token$WETH);
-Token.DEZU = (_Token$DEZU = {}, _Token$DEZU[ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(ChainId.MANTLE_TESTNET, '0xAc12F7948eFdfA205Df7daD3D1Ee04E564009ECB', 18, 'DEZU', 'DexSwapZonu'), _Token$DEZU[ChainId.MUMBAI] = /*#__PURE__*/new Token(ChainId.MUMBAI, '0x7FB56986974896ed4203857bAFf15Cb89cf082Cd', 18, 'DEZU', 'DexSwapZonu'), _Token$DEZU);
+Token.WETH = (_Token$WETH = {}, _Token$WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(ChainId.MANTLE_TESTNET, '0x707f2fE56A440E766bec41aBC9fc8695567D0ceA', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[ChainId.MUMBAI] = /*#__PURE__*/new Token(ChainId.MUMBAI, '0x2c57C73542a23dA327699D288757CFb41f71855f', 18, 'WETH', 'Wrapped Ether'), _Token$WETH);
+Token.DEZU = (_Token$DEZU = {}, _Token$DEZU[ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(ChainId.MANTLE_TESTNET, '0xCab6D79dD732779f081B5868AAb1e64F357e90A9', 18, 'DEZU', 'DexSwapZonu'), _Token$DEZU[ChainId.MUMBAI] = /*#__PURE__*/new Token(ChainId.MUMBAI, '0x7FB56986974896ed4203857bAFf15Cb89cf082Cd', 18, 'DEZU', 'DexSwapZonu'), _Token$DEZU);
+Token.ZONU = (_Token$ZONU = {}, _Token$ZONU[ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(ChainId.MANTLE_TESTNET, '0x9C3a2429A288dBEA75C819Fd18C0b35a0C3E1361', 18, 'ZONU', 'ZoNulet'), _Token$ZONU[ChainId.MUMBAI] = /*#__PURE__*/new Token(ChainId.MUMBAI, '0x9C3a2429A288dBEA75C819Fd18C0b35a0C3E1361', 18, 'ZONU', 'ZoNulet'), _Token$ZONU);
+Token.ZGEM = (_Token$ZGEM = {}, _Token$ZGEM[ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(ChainId.MANTLE_TESTNET, '0x8104B78e614a32ac4C5Cb54941a6B3b27143AbdB', 18, 'ZGEM', 'ZonuGem'), _Token$ZGEM[ChainId.MUMBAI] = /*#__PURE__*/new Token(ChainId.MUMBAI, '0x8104B78e614a32ac4C5Cb54941a6B3b27143AbdB', 18, 'ZGEM', 'ZonuGem'), _Token$ZGEM);
 Token.WBTC = (_Token$WBTC = {}, _Token$WBTC[ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(ChainId.MANTLE_TESTNET, '0x777638AB212Fab2F1D1202DedCC7f18D2c527b50', 8, 'WBTC', 'Wrapped BTC'), _Token$WBTC[ChainId.MUMBAI] = /*#__PURE__*/new Token(ChainId.MUMBAI, '0xE77B1Dc85edE199bf3dAA85D0958F2F966788af5', 8, 'WBTC', 'Wrapped BTC'), _Token$WBTC);
 Token.USDC = (_Token$USDC = {}, _Token$USDC[ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(ChainId.MANTLE_TESTNET, '0x97830fa9e74C5a596C8994C37f9e92cBc42560B3', 8, 'USDC', 'USDC'), _Token$USDC[ChainId.MUMBAI] = /*#__PURE__*/new Token(ChainId.MUMBAI, '0x530BEb0F943c4f23c95473F59Fe5fa9aF3eAA5A7', 8, 'USDC', 'USDC'), _Token$USDC);
 Token.USDT = (_Token$USDT = {}, _Token$USDT[ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(ChainId.MANTLE_TESTNET, '0xc75aE86d9F9d8C150b4bFf9A8Fb77481B0611a56', 8, 'USDT', 'USDT'), _Token$USDT[ChainId.MUMBAI] = /*#__PURE__*/new Token(ChainId.MUMBAI, '0x181e4AB46e2b6A6a262B1bA261ffd324BBA7C9f5', 8, 'USDT', 'USDT'), _Token$USDT);
@@ -1860,6 +1862,8 @@ var WBTC = Token.WBTC;
 var USDC = Token.USDC;
 var USDT = Token.USDT;
 var DEZU = Token.DEZU;
+var ZONU = Token.ZONU;
+var ZGEM = Token.ZGEM;
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
@@ -3761,5 +3765,5 @@ var Fetcher = /*#__PURE__*/function () {
   return Fetcher;
 }();
 
-export { BIT, ChainId, Currency, CurrencyAmount, DEXSWAP_TOKEN_LIST_ID, DEZU, ETHER, FACTORY_ADDRESS, FIVE, Fetcher, Fraction, INIT_CODE_HASH, InsufficientInputAmountError, InsufficientReservesError, LiquidityMiningCampaign, MINIMUM_LIQUIDITY, ONE, PERMISSIVE_MULTICALL_ABI, PERMISSIVE_MULTICALL_ADDRESS, Pair, Percent, Price, PricedToken, PricedTokenAmount, ROUTER_ADDRESS, Rounding, RoutablePlatform, Route, Router, SECONDS_IN_YEAR, SOLIDITY_TYPE_MAXIMA, stakingRewardsDistribution as STAKING_REWARDS_DISTRIBUTION_ABI, stakingRewardsDistributionFactory as STAKING_REWARDS_FACTORY_ABI, STAKING_REWARDS_FACTORY_ADDRESS, SolidityType, TEN, THREE, TokenRegistryAbi as TOKEN_REGISTRY_ABI, TOKEN_REGISTRY_ADDRESS, TWO, Token, TokenAmount, Trade, TradeType, USD, USDC, USDT, WBNB, WBTC, WETH, ZERO, ZERO_ADDRESS, _100, _1000, _10000, _25, _30, currencyEquals, defaultProtocolFeeDenominator, defaultSwapFee, inputOutputComparator, parseBigintIsh, tradeComparator };
+export { BIT, ChainId, Currency, CurrencyAmount, DEXSWAP_TOKEN_LIST_ID, DEZU, ETHER, FACTORY_ADDRESS, FIVE, Fetcher, Fraction, INIT_CODE_HASH, InsufficientInputAmountError, InsufficientReservesError, LiquidityMiningCampaign, MINIMUM_LIQUIDITY, ONE, PERMISSIVE_MULTICALL_ABI, PERMISSIVE_MULTICALL_ADDRESS, Pair, Percent, Price, PricedToken, PricedTokenAmount, ROUTER_ADDRESS, Rounding, RoutablePlatform, Route, Router, SECONDS_IN_YEAR, SOLIDITY_TYPE_MAXIMA, stakingRewardsDistribution as STAKING_REWARDS_DISTRIBUTION_ABI, stakingRewardsDistributionFactory as STAKING_REWARDS_FACTORY_ABI, STAKING_REWARDS_FACTORY_ADDRESS, SolidityType, TEN, THREE, TokenRegistryAbi as TOKEN_REGISTRY_ABI, TOKEN_REGISTRY_ADDRESS, TWO, Token, TokenAmount, Trade, TradeType, USD, USDC, USDT, WBNB, WBTC, WETH, ZERO, ZERO_ADDRESS, ZGEM, ZONU, _100, _1000, _10000, _25, _30, currencyEquals, defaultProtocolFeeDenominator, defaultSwapFee, inputOutputComparator, parseBigintIsh, tradeComparator };
 //# sourceMappingURL=dexswap-sdk.esm.js.map
