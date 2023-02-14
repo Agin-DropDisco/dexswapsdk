@@ -35,8 +35,8 @@ export class Token extends Currency {
   }
 
   public static readonly DEZU: { [key: number]: Token } = {
-    [ChainId.MANTLE_TESTNET]: new Token(ChainId.MANTLE_TESTNET, '0xCab6D79dD732779f081B5868AAb1e64F357e90A9', 18, 'DEZU', 'DexSwapZonu'),
-    [ChainId.MUMBAI]: new Token(ChainId.MUMBAI, '0x7FB56986974896ed4203857bAFf15Cb89cf082Cd', 18, 'DEZU', 'DexSwapZonu')
+    [ChainId.MANTLE_TESTNET]: new Token(ChainId.MANTLE_TESTNET, '0xCab6D79dD732779f081B5868AAb1e64F357e90A9', 8, 'DEZU', 'DexSwapZonu'),
+    [ChainId.MUMBAI]: new Token(ChainId.MUMBAI, '0x7FB56986974896ed4203857bAFf15Cb89cf082Cd', 8, 'DEZU', 'DexSwapZonu')
   }
 
   public static readonly ZONU: { [key: number]: Token } = {
