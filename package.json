@@ -1,7 +1,7 @@
 {
   "name": "dexswap-sdk",
   "license": "AGPL-3.0-or-later",
-  "version": "0.7.7",
+  "version": "0.1.7",
   "description": "An SDK for building applications on top of DexSwap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

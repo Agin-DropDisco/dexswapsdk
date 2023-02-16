@@ -20,7 +20,7 @@ export class Token extends Currency {
     ),
     [ChainId.MANTLE_TESTNET]: new Token(
       ChainId.MANTLE_TESTNET,
-      '0x41810F1664ce580072D9c23286Ea5df68db766F1',
+      '0x707f2fE56A440E766bec41aBC9fc8695567D0ceA',
       18,
       'WETH',
       'Wrapped Ether'
@@ -35,8 +35,18 @@ export class Token extends Currency {
   }
 
   public static readonly DEZU: { [key: number]: Token } = {
-    [ChainId.MANTLE_TESTNET]: new Token(ChainId.MANTLE_TESTNET, '0xAc12F7948eFdfA205Df7daD3D1Ee04E564009ECB', 18, 'DEZU', 'DexSwapZonu'),
-    [ChainId.MUMBAI]: new Token(ChainId.MUMBAI, '0x7FB56986974896ed4203857bAFf15Cb89cf082Cd', 18, 'DEZU', 'DexSwapZonu')
+    [ChainId.MANTLE_TESTNET]: new Token(ChainId.MANTLE_TESTNET, '0xCab6D79dD732779f081B5868AAb1e64F357e90A9', 8, 'DEZU', 'DexSwapZonu'),
+    [ChainId.MUMBAI]: new Token(ChainId.MUMBAI, '0x7FB56986974896ed4203857bAFf15Cb89cf082Cd', 8, 'DEZU', 'DexSwapZonu')
+  }
+
+  public static readonly ZONU: { [key: number]: Token } = {
+    [ChainId.MANTLE_TESTNET]: new Token(ChainId.MANTLE_TESTNET, '0x9C3a2429A288dBEA75C819Fd18C0b35a0C3E1361', 18, 'ZONU', 'ZoNulet'),
+    [ChainId.MUMBAI]: new Token(ChainId.MUMBAI, '0x9C3a2429A288dBEA75C819Fd18C0b35a0C3E1361', 18, 'ZONU', 'ZoNulet')
+  }
+
+  public static readonly ZGEM: { [key: number]: Token } = {
+    [ChainId.MANTLE_TESTNET]: new Token(ChainId.MANTLE_TESTNET, '0x8104B78e614a32ac4C5Cb54941a6B3b27143AbdB', 18, 'ZGEM', 'ZonuGem'),
+    [ChainId.MUMBAI]: new Token(ChainId.MUMBAI, '0x8104B78e614a32ac4C5Cb54941a6B3b27143AbdB', 18, 'ZGEM', 'ZonuGem')
   }
 
   public static readonly WBTC: { [key: number]: Token } = {
@@ -127,4 +137,6 @@ export const WBTC = Token.WBTC
 export const USDC = Token.USDC
 export const USDT = Token.USDT
 export const DEZU = Token.DEZU
+export const ZONU = Token.ZONU
+export const ZGEM = Token.ZGEM
 
