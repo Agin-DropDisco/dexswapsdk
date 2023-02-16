@@ -11,7 +11,6 @@ export declare class Currency {
     readonly name?: string;
     static readonly USD: Currency;
     static readonly ETHER: Currency;
-    static readonly BIT: Currency;
     private static readonly NATIVE_CURRENCY;
     /**
      * Constructs an instance of the base class `Currency`. The only instance of the base class `Currency` is `Currency.ETHER`.
@@ -25,4 +24,3 @@ export declare class Currency {
 }
 export declare const USD: Currency;
 export declare const ETHER: Currency;
-export declare const BIT: Currency;

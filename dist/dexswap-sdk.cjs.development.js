@@ -1768,13 +1768,11 @@ var Currency = /*#__PURE__*/function () {
 Currency.USD = /*#__PURE__*/new Currency(18, 'USD', 'US dollar'); // Native currencies for deployment chains
 
 Currency.ETHER = /*#__PURE__*/new Currency(18, 'ETH', 'Ether');
-Currency.BIT = /*#__PURE__*/new Currency(18, 'BIT', 'BIT');
-Currency.NATIVE_CURRENCY = (_Currency$NATIVE_CURR = {}, _Currency$NATIVE_CURR[exports.ChainId.MAINNET] = Currency.ETHER, _Currency$NATIVE_CURR[exports.ChainId.MANTLE_TESTNET] = Currency.BIT, _Currency$NATIVE_CURR[exports.ChainId.MUMBAI] = Currency.ETHER, _Currency$NATIVE_CURR);
+Currency.NATIVE_CURRENCY = (_Currency$NATIVE_CURR = {}, _Currency$NATIVE_CURR[exports.ChainId.MAINNET] = Currency.ETHER, _Currency$NATIVE_CURR[exports.ChainId.MANTLE_TESTNET] = Currency.ETHER, _Currency$NATIVE_CURR[exports.ChainId.MUMBAI] = Currency.ETHER, _Currency$NATIVE_CURR);
 var USD = Currency.USD;
 var ETHER = Currency.ETHER;
-var BIT = Currency.BIT;
 
-var _Token$WETH, _Token$DEZU, _Token$WBTC, _Token$USDC, _Token$USDT, _Token$WBNB, _Token$NATIVE_CURRENC;
+var _Token$WETH, _Token$DEZU, _Token$ZONU, _Token$ZGEM, _Token$WBTC, _Token$USDC, _Token$USDT, _Token$WBNB, _Token$NATIVE_CURRENC;
 /**
  * Represents an ERC20 token with a unique address and some metadata.
  */
@@ -1830,8 +1828,10 @@ var Token = /*#__PURE__*/function (_Currency) {
 
   return Token;
 }(Currency);
-Token.WETH = (_Token$WETH = {}, _Token$WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x41810F1664ce580072D9c23286Ea5df68db766F1', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x2c57C73542a23dA327699D288757CFb41f71855f', 18, 'WETH', 'Wrapped Ether'), _Token$WETH);
-Token.DEZU = (_Token$DEZU = {}, _Token$DEZU[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0xAc12F7948eFdfA205Df7daD3D1Ee04E564009ECB', 18, 'DEZU', 'DexSwapZonu'), _Token$DEZU[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x7FB56986974896ed4203857bAFf15Cb89cf082Cd', 18, 'DEZU', 'DexSwapZonu'), _Token$DEZU);
+Token.WETH = (_Token$WETH = {}, _Token$WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x707f2fE56A440E766bec41aBC9fc8695567D0ceA', 18, 'WETH', 'Wrapped Ether'), _Token$WETH[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x2c57C73542a23dA327699D288757CFb41f71855f', 18, 'WETH', 'Wrapped Ether'), _Token$WETH);
+Token.DEZU = (_Token$DEZU = {}, _Token$DEZU[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0xCab6D79dD732779f081B5868AAb1e64F357e90A9', 8, 'DEZU', 'DexSwapZonu'), _Token$DEZU[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x7FB56986974896ed4203857bAFf15Cb89cf082Cd', 8, 'DEZU', 'DexSwapZonu'), _Token$DEZU);
+Token.ZONU = (_Token$ZONU = {}, _Token$ZONU[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x9C3a2429A288dBEA75C819Fd18C0b35a0C3E1361', 18, 'ZONU', 'ZoNulet'), _Token$ZONU[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x9C3a2429A288dBEA75C819Fd18C0b35a0C3E1361', 18, 'ZONU', 'ZoNulet'), _Token$ZONU);
+Token.ZGEM = (_Token$ZGEM = {}, _Token$ZGEM[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x8104B78e614a32ac4C5Cb54941a6B3b27143AbdB', 18, 'ZGEM', 'ZonuGem'), _Token$ZGEM[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x8104B78e614a32ac4C5Cb54941a6B3b27143AbdB', 18, 'ZGEM', 'ZonuGem'), _Token$ZGEM);
 Token.WBTC = (_Token$WBTC = {}, _Token$WBTC[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x777638AB212Fab2F1D1202DedCC7f18D2c527b50', 8, 'WBTC', 'Wrapped BTC'), _Token$WBTC[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0xE77B1Dc85edE199bf3dAA85D0958F2F966788af5', 8, 'WBTC', 'Wrapped BTC'), _Token$WBTC);
 Token.USDC = (_Token$USDC = {}, _Token$USDC[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0x97830fa9e74C5a596C8994C37f9e92cBc42560B3', 8, 'USDC', 'USDC'), _Token$USDC[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x530BEb0F943c4f23c95473F59Fe5fa9aF3eAA5A7', 8, 'USDC', 'USDC'), _Token$USDC);
 Token.USDT = (_Token$USDT = {}, _Token$USDT[exports.ChainId.MANTLE_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MANTLE_TESTNET, '0xc75aE86d9F9d8C150b4bFf9A8Fb77481B0611a56', 8, 'USDT', 'USDT'), _Token$USDT[exports.ChainId.MUMBAI] = /*#__PURE__*/new Token(exports.ChainId.MUMBAI, '0x181e4AB46e2b6A6a262B1bA261ffd324BBA7C9f5', 8, 'USDT', 'USDT'), _Token$USDT);
@@ -1859,6 +1859,8 @@ var WBTC = Token.WBTC;
 var USDC = Token.USDC;
 var USDT = Token.USDT;
 var DEZU = Token.DEZU;
+var ZONU = Token.ZONU;
+var ZGEM = Token.ZGEM;
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
@@ -3761,7 +3763,6 @@ var Fetcher = /*#__PURE__*/function () {
 }();
 
 exports.JSBI = JSBI;
-exports.BIT = BIT;
 exports.Currency = Currency;
 exports.CurrencyAmount = CurrencyAmount;
 exports.DEXSWAP_TOKEN_LIST_ID = DEXSWAP_TOKEN_LIST_ID;
@@ -3809,6 +3810,8 @@ exports.WBTC = WBTC;
 exports.WETH = WETH;
 exports.ZERO = ZERO;
 exports.ZERO_ADDRESS = ZERO_ADDRESS;
+exports.ZGEM = ZGEM;
+exports.ZONU = ZONU;
 exports._100 = _100;
 exports._1000 = _1000;
 exports._10000 = _10000;
