@@ -1,14 +1,17 @@
 {
   "name": "dexswap-sdk",
   "license": "AGPL-3.0-or-later",
-  "version": "0.1.7",
+  "version": "0.1.6",
   "description": "An SDK for building applications on top of DexSwap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Agin-DropDisco/dexswapsdk.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agin-DropDisco/dexswapsdk.git"
+  },
   "keywords": [
     "mantle",
     "ethereum"
@@ -25,8 +28,6 @@
     "@makerdao/multicall": "^0.11.0",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
-    "dexswap-core": "git://github.com/Agin-DropDisco/dexswapcore.git#v3",
-    "dexswap-router": "git://github.com/Agin-DropDisco/dexswaprouter.git#v3",
     "jsbi": "^3.1.1",
     "node-fetch": "^2.6.1",
     "tiny-invariant": "^1.1.0",
@@ -64,5 +65,13 @@
   },
   "jest": {
     "testTimeout": 20000
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Agin-DropDisco/dexswapsdk/issues"
+  },
+  "homepage": "https://github.com/Agin-DropDisco/dexswapsdk#readme",
+  "directories": {
+    "test": "test"
+  },
+  "author": "agin dropdisco"
 }

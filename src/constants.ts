@@ -7,12 +7,12 @@ import {
   mainnet as coreMainnet,
   mantle_testnet as coreMantle_Testnet,
   mumbai as coreMumbai,
-} from 'dexswap-core/.contracts.json'
+} from './abis/core.json'
 import {
   mainnet as peripheryMainnet,
   mantle_testnet as peripheryMantle_Testnet,
   mumbai as peripheryMumbai,
-} from 'dexswap-router/.contracts.json'
+} from './abis/router.json'
 
 // exports for external consumption
 export type BigintIsh = JSBI | bigint | string

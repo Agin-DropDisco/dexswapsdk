@@ -1,0 +1,21 @@
+{
+
+    "mainnet": { 
+      "deployer": "0x0000000000000000000000000000000000000000",
+      "factory": "0x0000000000000000000000000000000000000000",
+      "feeReceiver": "0x0000000000000000000000000000000000000000",
+      "feeSetter": "0x0000000000000000000000000000000000000000"
+    },
+    "mantle_testnet": { 
+      "deployer": "0xE29556338838e8Eaf1D46bC26bC040BAAb5F7bcD",
+      "factory": "0x43d22291B20352263816e3636D9c83DE23c7c0b0",
+      "feeSetter": "0x8664BBB0a740C84Cd80Cf6861DAB0C4F25d52310",
+      "feeReceiver": "0xEf452f96b07a3AE99D98fcB72B8e71031993C4A5"
+    },
+    "mumbai": { 
+      "deployer": "0xb365862307F66a03F7128815f10A1B5d3Ba1fE68",
+      "factory": "0xc75aE86d9F9d8C150b4bFf9A8Fb77481B0611a56",
+      "feeSetter": "0x3296EB8EA6B25743Cda1596c6089Cc9B4ee795FE",
+      "feeReceiver": "0xaAeE131AE13069a92Bf5F1FceF2327da8802DbFC"
+    }
+  }
