@@ -19,10 +19,11 @@ export class Currency {
 
   // Native currencies for deployment chains
   public static readonly ETHER: Currency = new Currency(18, 'ETH', 'Ether')
+  public static readonly BIT: Currency = new Currency(18, 'BIT', 'BIT')
 
   private static readonly NATIVE_CURRENCY: { [chainId in ChainId]: Currency } = {
     [ChainId.MAINNET]: Currency.ETHER,
-    [ChainId.MANTLE_TESTNET]: Currency.ETHER,
+    [ChainId.MANTLE_TESTNET]: Currency.BIT,
     [ChainId.MUMBAI]: Currency.ETHER
   }
 
@@ -50,4 +51,6 @@ export class Currency {
 }
 
 export const USD = Currency.USD
+
 export const ETHER = Currency.ETHER
+export const BIT = Currency.BIT
