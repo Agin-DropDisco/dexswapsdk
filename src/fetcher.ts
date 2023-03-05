@@ -39,6 +39,7 @@ const TOKEN_LOGO_URI_CACHE: {
   [ChainId.MAINNET]: {},
   [ChainId.MANTLE_TESTNET]: {},
   [ChainId.MUMBAI]: {},
+  [ChainId.HYPERSPACE]: {},
 }
 
 /**
@@ -396,7 +397,7 @@ export abstract class Fetcher {
 
   private static async fetchTokenLogoUri(token: Token): Promise<string> {
     const chainId = token.chainId
-    if (chainId !== ChainId.MAINNET && chainId !== ChainId.MANTLE_TESTNET && chainId !== ChainId.MUMBAI) {
+    if (chainId !== ChainId.MAINNET && chainId !== ChainId.MANTLE_TESTNET && chainId !== ChainId.MUMBAI && chainId !== ChainId.HYPERSPACE) {
       return '' // token logos not fully supported for testnets
     }
     if (Object.keys(TOKEN_LOGO_URI_CACHE[chainId]).length === 0) {
@@ -406,7 +407,7 @@ export abstract class Fetcher {
   }
 
   private static async populateTokenLogoCache(chainId: ChainId): Promise<void> {
-    if (chainId !== ChainId.MAINNET && chainId !== ChainId.MANTLE_TESTNET && chainId !== ChainId.MUMBAI) {
+    if (chainId !== ChainId.MAINNET && chainId !== ChainId.MANTLE_TESTNET && chainId !== ChainId.MUMBAI && chainId !== ChainId.HYPERSPACE) {
       return
     }
     let tokenListURL = ''
@@ -429,7 +430,7 @@ export abstract class Fetcher {
 
   public static getCachedTokenLogo(token: Token): string {
     const { chainId } = token
-    if (chainId !== ChainId.MAINNET && chainId !== ChainId.MANTLE_TESTNET && chainId !== ChainId.MUMBAI) {
+    if (chainId !== ChainId.MAINNET && chainId !== ChainId.MANTLE_TESTNET && chainId !== ChainId.MUMBAI && chainId !== ChainId.HYPERSPACE) {
       return ''
     }
     return TOKEN_LOGO_URI_CACHE[chainId][token.address.toLowerCase()] || ''

@@ -16,15 +16,17 @@ export class Currency {
 
   // fiat currencies used to represent countervalues
   public static readonly USD: Currency = new Currency(18, 'USD', 'US dollar')
-
   // Native currencies for deployment chains
   public static readonly ETHER: Currency = new Currency(18, 'ETH', 'Ether')
   public static readonly BIT: Currency = new Currency(18, 'BIT', 'BIT')
+  public static readonly MATIC: Currency = new Currency(18, 'MATIC', 'MATIC')
+  public static readonly TFIL: Currency = new Currency(18, 'TFIL', 'Filecoin')
 
   private static readonly NATIVE_CURRENCY: { [chainId in ChainId]: Currency } = {
     [ChainId.MAINNET]: Currency.ETHER,
     [ChainId.MANTLE_TESTNET]: Currency.BIT,
-    [ChainId.MUMBAI]: Currency.ETHER
+    [ChainId.MUMBAI]: Currency.MATIC,
+    [ChainId.HYPERSPACE]: Currency.TFIL,
   }
 
   /**
@@ -51,6 +53,8 @@ export class Currency {
 }
 
 export const USD = Currency.USD
-
 export const ETHER = Currency.ETHER
 export const BIT = Currency.BIT
+export const MATIC = Currency.MATIC
+export const TFIL = Currency.TFIL
+

@@ -6,6 +6,9 @@
     "router": "0x575D6Cc373391048fb9ef14bf4deB811dE386b64"
   },
   "mumbai": {
-    "router": "0x755c8d2DC0c5F391BB4ED72d42098b43Dae6cba5"
+    "router": "0x92EB06c72201974b74264B14C6FDB316AB335ae7"
+  },
+  "hyperspace": {
+    "router": "0x369BB77C15855182E908F1B179feB968Ca190fc7"
   }
 }
