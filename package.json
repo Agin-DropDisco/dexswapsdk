@@ -1,7 +1,7 @@
 {
-  "name": "dexswap-sdk",
+  "name": "@zonudex/dexswapsdk",
   "license": "AGPL-3.0-or-later",
-  "version": "0.1.6",
+  "version": "0.1.2",
   "description": "An SDK for building applications on top of DexSwap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

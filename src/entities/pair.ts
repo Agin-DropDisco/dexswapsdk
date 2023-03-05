@@ -26,6 +26,7 @@ const INITIAL_CACHE_STATE = {
   [ChainId.MAINNET]: {},
   [ChainId.MANTLE_TESTNET]: {},
   [ChainId.MUMBAI]: {},
+  [ChainId.HYPERSPACE]: {},
 }
 
 let PAIR_ADDRESS_CACHE: {
@@ -35,7 +36,7 @@ let PAIR_ADDRESS_CACHE: {
 } = {
   [RoutablePlatform.DEXSWAP.name]: {
     ...INITIAL_CACHE_STATE
-  },
+  }
 }
 
 export class Pair {

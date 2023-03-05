@@ -7,11 +7,13 @@ import {
   mainnet as coreMainnet,
   mantle_testnet as coreMantle_Testnet,
   mumbai as coreMumbai,
+  hyperspace as coreHyperspace,
 } from './abis/core.json'
 import {
   mainnet as peripheryMainnet,
   mantle_testnet as peripheryMantle_Testnet,
   mumbai as peripheryMumbai,
+  hyperspace as peripheryHyperspace,
 } from './abis/router.json'
 
 // exports for external consumption
@@ -21,6 +23,7 @@ export enum ChainId {
   MAINNET = 1,
   MANTLE_TESTNET = 5001,
   MUMBAI = 80001,
+  HYPERSPACE = 3141,
 }
 
 export enum TradeType {
@@ -40,34 +43,39 @@ export const FACTORY_ADDRESS: { [chainId: number]: string } = {
   [ChainId.MAINNET]: coreMainnet.factory,
   [ChainId.MANTLE_TESTNET]: coreMantle_Testnet.factory,
   [ChainId.MUMBAI]: coreMumbai.factory,
+  [ChainId.HYPERSPACE]: coreHyperspace.factory,
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: peripheryMainnet.router,
   [ChainId.MANTLE_TESTNET]: peripheryMantle_Testnet.router,
   [ChainId.MUMBAI]: peripheryMumbai.router,
+  [ChainId.HYPERSPACE]: peripheryHyperspace.router,
 }
 
 export const STAKING_REWARDS_FACTORY_ADDRESS: { [chainId: number]: string } = {
   [ChainId.MAINNET]: '0x0000000000000000000000000000000000001234',
   [ChainId.MANTLE_TESTNET]: '0x0000000000000000000000000000000000001234',
   [ChainId.MUMBAI]: '0x0000000000000000000000000000000000001234',
+  [ChainId.HYPERSPACE]: '0x0000000000000000000000000000000000001234',
 }
 
 export const TOKEN_REGISTRY_ADDRESS: { [chainId: number]: string } = {
   [ChainId.MAINNET]: '0x93DB90445B76329e9ed96ECd74e76D8fbf2590d8',
   [ChainId.MANTLE_TESTNET]: '0x3e7C79EF335F55b2E57C80731a68cAB9dB280453',
   [ChainId.MUMBAI]: '0x63Aa6D1462165bDfb1b50415f5fe70Ded49E5d35',
+  [ChainId.HYPERSPACE]: '0x0000000000000000000000000000000000001234',
 }
 
 export const DEXSWAP_TOKEN_LIST_ID: { [chainId: number]: number } = {
   [ChainId.MAINNET]: 1,
   [ChainId.MANTLE_TESTNET]: 1,
   [ChainId.MUMBAI]: 1,
+  [ChainId.HYPERSPACE]: 1,
 
 }
 
-export const INIT_CODE_HASH = '0x9cc6182b292e7e920520a70ff99748b19f30f51e4a384dc34cf9f7b10d936440'
+export const INIT_CODE_HASH = '0x5aa557757702c2f2d3c5491233e3faa010a4b66b16383d2025d5fe58dbb6704c'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
@@ -101,7 +109,8 @@ export const SOLIDITY_TYPE_MAXIMA = {
 const PERMISSIVE_MULTICALL_ADDRESS: { [chainId: number]: string } = {
   [ChainId.MAINNET]: '0x0946f567d0ed891e6566c1da8e5093517f43571d',
   [ChainId.MANTLE_TESTNET]: '0xA8fD29EbbfbC21bc274FedE5Aa5C5D3cedc43f2C',
-  [ChainId.MUMBAI]: '0xBE134FCAB1141485a7cD9Cc952172E0AcA9Ed46D',
+  [ChainId.MUMBAI]: '0x016781F588Cb50234f12b6A6EeA8a36b0BCe2f37',
+  [ChainId.HYPERSPACE]: '0x65C048F785Ac27D17Ea1F6433A8bc47f2F36b7aE',
 }
 
 export {

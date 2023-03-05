@@ -1,5 +1,4 @@
 {
-
     "mainnet": { 
       "deployer": "0x0000000000000000000000000000000000000000",
       "factory": "0x0000000000000000000000000000000000000000",
@@ -13,9 +12,15 @@
       "feeReceiver": "0xEf452f96b07a3AE99D98fcB72B8e71031993C4A5"
     },
     "mumbai": { 
-      "deployer": "0xb365862307F66a03F7128815f10A1B5d3Ba1fE68",
-      "factory": "0xc75aE86d9F9d8C150b4bFf9A8Fb77481B0611a56",
-      "feeSetter": "0x3296EB8EA6B25743Cda1596c6089Cc9B4ee795FE",
-      "feeReceiver": "0xaAeE131AE13069a92Bf5F1FceF2327da8802DbFC"
+      "deployer": "0xa63a866b0247E2C9E14f9b1daD3Ab6B76A13695e",
+      "factory": "0x15547A84DB2CD648735165AD864445dB1086CC82",
+      "feeSetter": "0xD365e69B63b1ba5E7E6E06B762462eb3De9DD9f3",
+      "feeReceiver": "0xD9a52659A06b28d19bE151B36bfCA0563468a1b1"
+    },
+    "hyperspace": { 
+      "deployer": "0x0000000000000000000000000000000000000000",
+      "factory": "0x978ab5Fa3FbF9ceaB847b05AAb40A1A9E83389d9",
+      "feeSetter": "0x2f6248b40db4B146D037fd03cC3194d01Fb11A90",
+      "feeReceiver": "0xc4e9d12fD9b6171183f5b6f344A573E9B63F2b0b"
     }
   }
